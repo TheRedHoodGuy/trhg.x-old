@@ -1,0 +1,26 @@
+new TypeIt("#element", {
+            speed: 65,
+            loop: true,
+          })
+            .type("Fronten", { delay: 200 })
+            .delete(7)
+            .type("Fullstack Develle", { delay: 50 })
+            .delete(2)
+            .type("oper.", { delay: 3000 })
+            .delete(20)
+            .pause(1000)
+            .type("2D Animto", { delay: 150 })
+            .move(-2)
+            .type("a")
+            .move(4)
+            .type("r, Designer abd Artist")
+            .move(-8)
+            .delete(1)
+            .type("n")
+            .move(8)
+            .type(" :)", { delay: 3000 })
+            .delete(35)
+            .pause(1000)
+            .type("Cybersecurity Enthusiast...", { delay: 3000 })
+            .delete(27)
+            .go();
