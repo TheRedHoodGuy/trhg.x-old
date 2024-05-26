@@ -12,7 +12,7 @@ new TypeIt("#element", {
             .type("2D Animto", { delay: 150 })
             .move(-2)
             .type("a")
-            .move(4)
+            .move(2)
             .type("r, Designer abd Artist")
             .move(-8)
             .delete(1)
@@ -23,4 +23,5 @@ new TypeIt("#element", {
             .pause(1000)
             .type("Cybersecurity Enthusiast...", { delay: 3000 })
             .delete(27)
+            .pause(1000)
             .go();

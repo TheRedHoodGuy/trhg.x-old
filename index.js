@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > headerHeight) {
-      header.classList.add("shadow-2xl");
+      header.classList.add("shadow-lg");
     } else {
-      header.classList.remove("shadow-2xl");
+      header.classList.remove("shadow-lg");
     }
   });
 });
