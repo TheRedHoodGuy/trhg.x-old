@@ -1,0 +1,19 @@
+@keyframes fadeinOne {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0px);
+  }
+}
+
+.fadeinOne {
+  animation: fadeinOne 1s ease;
+  opacity: 0;
+}
+
+.fadeinOne.animate {
+  animation: fadeinOne 1.5s ease-in-out forwards;
+}

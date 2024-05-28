@@ -20,8 +20,10 @@
     <!--Metas's-->
 
     <!--Google Fonts and styles-->
+    <link rel="stylesheet" href="animations.css" />
     <link rel="stylesheet" href="input.css" />
     <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -35,14 +37,18 @@
     <!--Google Fonts-->
 
     <!--Cdns -->
+    <script src="https://cdn.blobity.dev/by.js"></script>
+    <script src="lib/easytimer/dist/easytimer.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="index.js"></script>
     <!--Cdns -->
   </head>
-  <body class="text-black w-screen h-screen overflow-x-hidden tracking-wide">
+  <body
+    class="text-black bg-white w-screen h-screen overflow-x-hidden tracking-wide"
+  >
     <header
-      class="bg-white px-24 z-50 backdrop-blur-md flex p-6 items-center fixed left-0 right-0 top-0"
+      class="bg-white px-32 z-50 backdrop-blur-md flex p-6 items-center fixed left-0 right-0 top-0"
     >
       <div>
         <a class="text-xl font-medium" href="#"
@@ -104,12 +110,20 @@
         </ul>
       </nav>
     </header>
+
+    <!--Hero-->
     <section class="w-full h-full flex items-center px-24">
-      <div class="grid grid-cols-2 items-center w-full">
-        <main class="h-fit mt-16">
+      <div class="items-center w-full">
+        <main class="h-fit mt-16 flex justify-center items-center flex-col">
           <h1 class="text-5xl">I'm Xavier Okpalannajiaku</h1>
           <h2 class="text-5xl mt-8">
-            <span class="text-xl">a.k.a</span>The<span class="text-[#FF0000]"
+            <span id="bouncer" class="text-xl"
+              ><em class="text-gray-400">a.k.a</em></span
+            >The<span
+              onmouseover="blobity.bounce()"
+              data-blobity-magnetic="true"
+              data-blobity-tooltip="All is better in red"
+              class="text-[#FF0000]"
               >Red</span
             >HoodGuy
           </h2>
@@ -144,19 +158,24 @@
               .go();
           </script>
         </main>
-        <div class="w-[500px] translate-y-[17px] ml-auto select-none">
-          <img class="w-full" src="redhoodie.png" alt="A guy in a red hoodie" />
-        </div>
       </div>
     </section>
+    <!--Hero-->
+
+    <!--Versatility-->
     <section class="w-full px-24 py-8">
       <div class="flex flex-col gap-8">
-        <div class="w-full flex justify-center items-centerq">
-          <h4 class="text-2xl">Versatility</h4>
+        <div class="w-full flex items-centerq">
+          <h4 class="text-3xl font-medium">Versatility</h4>
         </div>
+        <!--What do I know-->
         <div class="grid grid-cols-2 gap-8">
+          <!---->
           <div
-            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-md hover:scale-105 duration-100"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="Started 2016, I still don't know, what I don't know"
+            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-lg hover:scale-105 duration-100"
           >
             <div class="p-5 w-[15%]">
               <span>HTML5</span>
@@ -168,9 +187,14 @@
               <span>75%</span>
             </div>
           </div>
+          <!---->
 
+          <!---->
           <div
-            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-md hover:scale-105 duration-100"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="Also started 2016 :)"
+            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-lg hover:scale-105 duration-100"
           >
             <div class="p-5 w-[15%]">
               <span>CSS3</span>
@@ -182,9 +206,14 @@
               <span>63%</span>
             </div>
           </div>
+          <!---->
 
+          <!---->
           <div
-            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-md hover:scale-105 duration-100"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="Do I really know JavaScript?"
+            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-lg hover:scale-105 duration-100"
           >
             <div class="p-5 w-[15%]">
               <span>JS</span>
@@ -196,9 +225,14 @@
               <span>40%</span>
             </div>
           </div>
+          <!---->
 
+          <!---->
           <div
-            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-md hover:scale-105 duration-100"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="React is harrrrdddddddddd :("
+            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-lg hover:scale-105 duration-100"
           >
             <div class="p-5 w-[15%]">
               <span>ReactJs</span>
@@ -210,9 +244,52 @@
               <span>10%</span>
             </div>
           </div>
+          <!---->
 
+          <!---->
           <div
-            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-md hover:scale-105 duration-100"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="Tf is a PHP?"
+            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-lg hover:scale-105 duration-100"
+          >
+            <div class="p-5 w-[15%]">
+              <span>PHP</span>
+            </div>
+            <div
+              class="mx-5 outline outline-1 outline-[#FF0000] w-[75%] h-[10px] relative after:absolute after:bg-[#FF0000] after:w-[12%] after:h-full"
+            ></div>
+            <div class="w-[15%] p-5 flex justify-center items-center">
+              <span>12%</span>
+            </div>
+          </div>
+          <!---->
+
+          <!---->
+          <div
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="Was tryna learn vulnerabilities"
+            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-lg hover:scale-105 duration-100"
+          >
+            <div class="p-5 w-[15%]">
+              <span>MySQL</span>
+            </div>
+            <div
+              class="mx-5 outline outline-1 outline-[#FF0000] w-[75%] h-[10px] relative after:absolute after:bg-[#FF0000] after:w-[3%] after:h-full"
+            ></div>
+            <div class="w-[15%] p-5 flex justify-center items-center">
+              <span>3%</span>
+            </div>
+          </div>
+          <!---->
+
+          <!---->
+          <div
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="I mean I already know tailwind"
+            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-lg hover:scale-105 duration-100"
           >
             <div class="p-5 w-[15%]">
               <span>Bootstrap</span>
@@ -224,9 +301,14 @@
               <span>55%</span>
             </div>
           </div>
+          <!---->
 
+          <!---->
           <div
-            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-md hover:scale-105 duration-100"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="TailwindCSS is the GOAT!!, Used it for this site"
+            class="flex justify-between items-center shadow-sm border-l-2 hover:border-l-[#FF0000] hover:shadow-lg hover:scale-105 duration-100"
           >
             <div class="p-5 w-[15%]">
               <span>Tailwind</span>
@@ -238,14 +320,21 @@
               <span>66%</span>
             </div>
           </div>
+          <!---->
         </div>
+        <!--What do i know-->
       </div>
       <div class="p-[1px] bg-[#FF0000] my-16"></div>
+      <!--Skills-->
       <div class="w-full h-fit">
+        <!--Skills List-->
         <div class="grid grid-cols-8 gap-8 w-full">
           <!-- Grid 1 | Web Developer -->
           <div
-            class="border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-6 bg-opacity-50 flex flex-col gap-4 col-span-3 row-span-1 hover:bg-white shadow-md duration-150 group"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="1"
+            class="text-sm rounded-r-xl border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-8 bg-opacity-50 flex flex-col gap-4 col-span-3 row-span-1 hover:bg-white shadow-md duration-150 group"
           >
             <div
               class="flex text-4xl text-[#FF0000] group-hover:text-gray-800 duration-100"
@@ -270,7 +359,10 @@
 
           <!-- Grid 2 | Web Designer -->
           <div
-            class="border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-6 bg-opacity-50 flex flex-col gap-4 col-span-3 row-span-1 hover:bg-white shadow-md duration-150 group"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="2"
+            class="text-sm rounded-r-xl border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-8 bg-opacity-50 flex flex-col gap-4 col-span-3 row-span-1 hover:bg-white shadow-md duration-150 group"
           >
             <div
               class="flex text-4xl text-[#FF0000] group-hover:text-gray-800 duration-100"
@@ -295,7 +387,10 @@
 
           <!-- Grid 3 | Musician -->
           <div
-            class="border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-6 bg-opacity-50 flex flex-col gap-4 col-span-2 row-span-2 hover:bg-white shadow-md duration-150 group"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="3"
+            class="text-sm rounded-r-xl border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-8 bg-opacity-50 flex flex-col gap-4 col-span-2 row-span-2 hover:bg-white shadow-md duration-150 group"
           >
             <div
               class="flex text-4xl text-[#FF0000] group-hover:text-gray-800 duration-100"
@@ -321,7 +416,10 @@
 
           <!-- Grid 4 | Graphic Designer -->
           <div
-            class="border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-6 bg-opacity-50 flex flex-col gap-4 col-span-3 row-span-1 hover:bg-white shadow-md duration-150 group"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="4"
+            class="text-sm rounded-r-xl border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-8 bg-opacity-50 flex flex-col gap-4 col-span-3 row-span-1 hover:bg-white shadow-md duration-150 group"
           >
             <div
               class="flex text-4xl text-[#FF0000] group-hover:text-gray-800 duration-100"
@@ -346,7 +444,10 @@
 
           <!-- Grid 5 | Animator -->
           <div
-            class="border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-6 bg-opacity-50 flex flex-col gap-4 col-span-3 row-span-1 hover:bg-white shadow-md duration-150 group"
+            onmouseover="blobity.slow()"
+            data-blobity-magnetic="true"
+            data-blobity-tooltip="One Guy, 5 skills, what more do you want?"
+            class="text-sm rounded-r-xl border-l-2 cursor-pointer hover:scale-105 hover:border-[#FF0000] p-8 bg-opacity-50 flex flex-col gap-4 col-span-3 row-span-1 hover:bg-white shadow-md duration-150 group"
           >
             <div
               class="flex text-4xl text-[#FF0000] group-hover:text-gray-800 duration-100"
@@ -369,26 +470,40 @@
           </div>
           <!-- Grid 5 -->
         </div>
+        <!--Skill List-->
       </div>
+      <!--Skills-->
     </section>
+    <!--Versatility-->
+
+    <!--Portfolio-->
     <section class="w-full h-full px-24 py-8">
-      <div class="w-full flex justify-center items-center">
-        <h4 class="text-2xl mb-8">Type Shit</h4>
+      <!--Portfolio Header-->
+      <div class="w-full flex items-center">
+        <h4 class="text-2xl font-medium mb-8">
+          Stuff <span class="text-[#FF0000]">I've</span> done:
+        </h4>
       </div>
+      <!--Portfolio Header-->
+      <!--Portfolio Lists-->
       <div class="grid grid-cols-3 gap-10">
         <!---->
         <div
-          class="relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
+          class="rounded-xl overflow-hidden relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
         >
           <div class="h-64 flex justify-center items-center overflow-hidden">
+            <span
+              class="absolute z-30 bg-[#FF0000] h-[9999px] -translate-x-48 -translate-y-48 group-hover:translate-y-48 group-hover:translate-x-48 duration-500 ease-in-out p-4 rotate-45"
+            ></span>
+
             <img
-              class="scale-110"
+              class="scale-125"
               src="/project/Rating.jpg"
               alt="Desktop Design - Rating Comp"
             />
 
             <div
-              class="z-20 bg-white bg-opacity-5 backdrop-blur-md absolute shadow-lg opacity-0 h-full overflow-hidden p-6 py-0 group-hover:p-6 group-hover:opacity-100 duration-100 flex flex-col justify-center items-center text-white text-sm w-full"
+              class="z-20 bg-white bg-opacity-5 backdrop-blur-md absolute shadow-lg opacity-0 h-full overflow-hidden p-6 py-0 group-hover:p-6 group-hover:opacity-100 duration-500 flex flex-col justify-center items-center text-white text-sm w-full"
             >
               <h5 class="text-xl font-medium mb-6">
                 Interactive Rating Component
@@ -402,14 +517,14 @@
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-[#FF0000] hover:text-white duration-150 py-2 px-3 bg-white text-[#FF0000]"
+                  class="rounded-full hover:bg-white outline outline-1 outline-white hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent text-white"
                   >View on GitHub</a
                 >
                 <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-[#FF0000] text-white"
+                  class="rounded-full hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent outline outline-1 outline-white text-white"
                   >View Live Page
                   <i class="bi bi-box-arrow-up-right"></i>
                 </a>
@@ -421,15 +536,20 @@
 
         <!---->
         <div
-          class="relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
+          class="rounded-xl overflow-hidden relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
         >
           <div
-            class="relative h-64 flex justify-center items-center overflow-y-hidden"
+            class="relative h-64 flex justify-center items-center overflow-hidden"
           >
+            <span
+              class="absolute z-30 bg-[#FF0000] h-[9999px] -translate-x-48 -translate-y-48 group-hover:translate-y-48 group-hover:translate-x-48 duration-500 ease-in-out p-4 rotate-45"
+            ></span>
+
             <img
               src="/project/RecipePage.jpg"
               alt="Desktop Design - Recipie Page"
             />
+
             <div
               class="z-20 bg-black bg-opacity-55 backdrop-blur-md absolute shadow-lg opacity-0 h-full overflow-hidden p-6 py-0 group-hover:p-6 group-hover:opacity-100 duration-100 flex flex-col justify-center items-center text-white text-sm w-full"
             >
@@ -445,14 +565,14 @@
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-[#FF0000] hover:text-white duration-150 py-2 px-3 bg-white text-[#FF0000]"
+                  class="rounded-full hover:bg-white outline outline-1 outline-white hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent text-white"
                   >View on GitHub</a
                 >
                 <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-[#FF0000] text-white"
+                  class="rounded-full hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent outline outline-1 outline-white text-white"
                   >View Live Page
                   <i class="bi bi-box-arrow-up-right"></i>
                 </a>
@@ -464,9 +584,13 @@
 
         <!---->
         <div
-          class="relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
+          class="rounded-xl overflow-hidden relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
         >
           <div class="h-64 flex justify-center items-center overflow-y-hidden">
+            <span
+              class="absolute z-30 bg-[#FF0000] h-[9999px] -translate-x-48 -translate-y-48 group-hover:translate-y-48 group-hover:translate-x-48 duration-500 ease-in-out p-4 rotate-45"
+            ></span>
+
             <img
               src="/project/Sociallinks.jpg"
               alt="Desktop Design - Sociallinks"
@@ -486,14 +610,14 @@
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-[#FF0000] hover:text-white duration-150 py-2 px-3 bg-white text-[#FF0000]"
+                  class="rounded-full hover:bg-white outline outline-1 outline-white hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent text-white"
                   >View on GitHub</a
                 >
                 <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-[#FF0000] text-white"
+                  class="rounded-full hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent outline outline-1 outline-white text-white"
                   >View Live Page
                   <i class="bi bi-box-arrow-up-right"></i>
                 </a>
@@ -505,11 +629,15 @@
 
         <!---->
         <div
-          class="relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
+          class="rounded-xl overflow-hidden relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
         >
           <div
-            class="relative h-64 flex justify-center items-center overflow-y-hidden"
+            class="relative h-64 flex justify-center items-center overflow-hidden"
           >
+            <span
+              class="absolute z-30 bg-[#FF0000] h-[9999px] -translate-x-48 -translate-y-48 group-hover:translate-y-48 group-hover:translate-x-48 duration-500 ease-in-out p-4 rotate-45"
+            ></span>
+
             <img src="/project/news.jpg" alt="Desktop Design - News Homepage" />
             <div
               class="z-20 bg-black bg-opacity-55 backdrop-blur-md absolute shadow-lg opacity-0 h-full overflow-hidden p-6 py-0 group-hover:p-6 group-hover:opacity-100 duration-100 flex flex-col justify-center items-center text-white text-sm w-full"
@@ -526,14 +654,14 @@
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-[#FF0000] hover:text-white duration-150 py-2 px-3 bg-white text-[#FF0000]"
+                  class="rounded-full hover:bg-white outline outline-1 outline-white hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent text-white"
                   >View on GitHub</a
                 >
                 <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-[#FF0000] text-white"
+                  class="rounded-full hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent outline outline-1 outline-white text-white"
                   >View Live Page
                   <i class="bi bi-box-arrow-up-right"></i>
                 </a>
@@ -545,11 +673,15 @@
 
         <!---->
         <div
-          class="relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
+          class="rounded-xl overflow-hidden relative h-fit shadow-lg group cursor-pointer hover:-translate-x-1 hover:-translate-y-2 hover:shadow-xl duration-100"
         >
           <div
-            class="relative h-64 flex justify-center items-center overflow-y-hidden group"
+            class="relative h-64 flex justify-center items-center overflow-hidden group"
           >
+            <span
+              class="absolute z-30 bg-[#FF0000] h-[9999px] -translate-x-48 -translate-y-48 group-hover:translate-y-48 group-hover:translate-x-48 duration-500 ease-in-out p-4 rotate-45"
+            ></span>
+
             <img
               src="/project/newsletter.jpg"
               alt="Desktop Design - Newsletter SignUp Page"
@@ -569,14 +701,14 @@
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-[#FF0000] hover:text-white duration-150 py-2 px-3 bg-white text-[#FF0000]"
+                  class="rounded-full hover:bg-white outline outline-1 outline-white hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent text-white"
                   >View on GitHub</a
                 >
                 <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-[#FF0000] text-white"
+                  class="rounded-full hover:bg-white hover:shadow-md hover:text-[#FF0000] duration-150 py-2 px-3 bg-transparent outline outline-1 outline-white text-white"
                   >View Live Page
                   <i class="bi bi-box-arrow-up-right"></i>
                 </a>
@@ -588,65 +720,127 @@
 
         <!---->
         <div
-          class="border-2 border-dotted border-[#FF0000] flex flex-col justify-center items-center"
+          onmouseover="blobity.slow()"
+          data-blobity-magnetic="true"
+          data-blobity-tooltip="What is it?, Haven't I done enough?"
+          class="hover:-translate-x-1 hover:-translate-y-1 duration-100 cursor-crosshair relative overflow-hidden rounded-xl border-2 border-dotted border-[#FF0000] flex flex-col justify-center items-center group"
         >
-          <i class="bi bi-plus text-5xl text-[#FF0000]"></i>
-          <span class="text-[#FF0000]">More to come</span>
+          <i
+            class="bi z-10 bi-plus text-5xl text-[#FF0000] group-hover:text-white"
+          ></i>
+          <div class="relative w-full flex justify-center">
+            <span
+              class="text-[#FF0000] absolute opacity-100 group-hover:opacity-0"
+              >More to come</span
+            >
+            <span
+              class="text-white z-10 absolute group-hover:opacity-100 opacity-0"
+              >There's literally Nothing here</span
+            >
+          </div>
+          <div
+            class="bg-[#FF0000] rounded-full absolute opacity-0 group-hover:opacity-100 w-0 h-0 group-hover:w-[600px] group-hover:h-[600px] duration-200 ease-in-out"
+          ></div>
         </div>
+        <!---->
       </div>
+      <!--Portfolio Lists-->
     </section>
+    <!--Portfolio-->
+
     <section
       class="my-20 px-24 items-center justify-around w-full h-fit flex flex-wrap"
     >
       <div class="p-8 flex flex-col justify-center items-center gap-6">
-        <span class="text-5xl text-[#FF0000]">12+</span>
+        <span
+          class="text-5xl text-[#FF0000]"
+          onmouseover="blobity.slow()"
+          data-blobity-magnetic="true"
+          data-blobity-tooltip="Half completed, More new projects made"
+          c
+          >12+</span
+        >
         <em class="text-gray-500">Projects Worked on</em>
       </div>
       <div class="p-8 flex flex-col justify-center items-center gap-6">
-        <span class="text-5xl text-[#FF0000]">15+</span>
+        <span
+          onmouseover="blobity.slow()"
+          data-blobity-magnetic="true"
+          data-blobity-tooltip="Someone said my site was nice!!!"
+          class="text-5xl text-[#FF0000]"
+          id="count"
+          >15+</span
+        >
         <em class="text-gray-500">Positive Feedbacks</em>
       </div>
       <div class="p-8 flex flex-col justify-center items-center gap-6">
-        <span class="text-5xl text-[#FF0000]">300+</span>
+        <span
+          class="text-5xl text-[#FF0000]"
+          onmouseover="blobity.slow()"
+          data-blobity-magnetic="true"
+          data-blobity-tooltip="I promise I didn't spam ;)"
+          >300+</span
+        >
         <em class="text-gray-500">Linkedin Connections</em>
       </div>
       <div class="p-8 flex flex-col justify-center items-center gap-6">
-        <span class="text-5xl text-[#FF0000]">1+</span>
+        <span
+          class="text-5xl text-[#FF0000]"
+          onmouseover="blobity.slow()"
+          data-blobity-magnetic="true"
+          data-blobity-tooltip="And I'm proud of it"
+          >1+</span
+        >
         <em class="text-gray-500">Certifications</em>
       </div>
     </section>
+
     <section class="w-full h-fit px-24">
       <div
-        class="w-full p-6 outline-gray-200 outline-1 outline h-[200px] flex flex-col justify-center items-center gap-8 shadow-xl"
+        class="w-full p-6 outline-gray-200 outline-1 outline h-[200px] flex flex-col justify-center items-center gap-8 shadow-md"
       >
-        <h5 class="text-xl text-[#FF0000]">Let's Work Together?</h5>
+        <h5
+          class="text-xl text-[#FF0000]"
+          onmouseover="blobity.slow()"
+          data-blobity-magnetic="true"
+          data-blobity-tooltip="I promise I don't bite"
+        >
+          Let's Work Together?
+        </h5>
         <ul class="flex gap-8">
           <li>
             <a
-              href="#"
-              class="flex gap-2 items-center text-gray-500 hover:text-[#FF0000] duration-100"
+              target="_blank"
+              href="https://www.linkedin.com/in/xavier-okpalannajiaku-8a07812bb/"
+              class="z-[999px] flex gap-2 items-center text-gray-500 hover:text-[#FF0000] duration-100"
               ><i class="bi bi-linkedin text-2xl"></i>Okpalannajiaku Xavier
               Chimezie</a
             >
           </li>
+
           <li>
             <a
-              href="#"
+              target="_blank"
+              href="mailto:trhg.xavierokpalannajiaku.mez@gmail.com"
               class="flex gap-2 items-center text-gray-500 hover:text-[#FF0000] duration-100"
               ><i class="bi bi-envelope text-2xl"></i
               >trhg.xavierokpalannajiaku.mez@gmail.com</a
             >
           </li>
+
           <li>
             <a
-              href="#"
+              target="_blank"
+              href="https://wa.me/23407049628148"
               class="flex gap-2 items-center text-gray-500 hover:text-[#FF0000] duration-100"
               ><i class="bi bi-whatsapp text-2xl"></i>+234 070 4962 8148</a
             >
           </li>
+
           <li>
             <a
-              href="#"
+              target="_blank"
+              href="https://www.instagram.com/xavier.draws.stuff/"
               class="flex gap-2 items-center text-gray-500 hover:text-[#FF0000] duration-100"
               ><i class="bi bi-instagram text-2xl"></i>Xavier.Draws.Stuff</a
             >
@@ -654,13 +848,36 @@
         </ul>
       </div>
     </section>
+
     <footer
       class="text-xs w-full justify-center items-center p-4 flex mt-20 bg-slate-600 text-white"
     >
       <span
         >Designed and Developed by |
-        <span>Okpalannajiaku Xavier Chimezie</span>. © TheRedHoodGuy</span
+        <span>Okpalannajiaku Xavier Chimezie</span>. © TheRedHoodGuy 2024</span
       >
     </footer>
   </body>
+  <script>
+    const blobity = new Blobity({
+      dotColor: "#FF0000",
+      size: 100,
+      zIndex: 51,
+      font: "sans-serif",
+      fontSize: 16,
+      fontColor: "#FFFFFF",
+      kineticMorping: true,
+      tooltipPadding: 10,
+      focusableElementsOffsetX: 0.7,
+      focusableElementsOffsetY: 0.7,
+    });
+  </script>
+  <!-- <script src="https://unpkg.com/kursor"></script>
+  <script>
+    new kursor({
+      type: 4,
+      removeDefaultCursor: true,
+      color: "#000",
+    });
+  </script> -->
 </html>

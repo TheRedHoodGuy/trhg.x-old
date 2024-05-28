@@ -8,6 +8,18 @@
   }
 }
 
+::selection {
+  background-color: red;
+}
+
+::-moz-selection {
+  background-color: red;
+}
+
+::-webkit-selection {
+  background-color: red;
+}
+
 .tred {
   color: #ff0000;
 }
